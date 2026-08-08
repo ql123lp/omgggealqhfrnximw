@@ -176,7 +176,7 @@ local MinimizedIcon = Instance.new("TextButton")
 MinimizedIcon.Size = UDim2.new(0, 45, 0, 45)
 MinimizedIcon.Position = UDim2.new(0.5, -22, 0.1, 0)
 MinimizedIcon.BackgroundColor3 = Color3.fromRGB(20, 20, 28)
-MinimizedIcon.Text = "⚡"
+MinimizedIcon.Text = "💀"
 MinimizedIcon.TextSize = 22
 MinimizedIcon.TextColor3 = Color3.fromRGB(160, 100, 255)
 MinimizedIcon.Font = Enum.Font.GothamBold
@@ -631,10 +631,10 @@ end
 --- UI Controls ---
 
 CreateButtonRow(
-    "伪无敌: 关", function(btn)
+    "穿墙: 关", function(btn)
         btn.MouseButton1Click:Connect(function()
             IntangibleActive = not IntangibleActive
-            btn.Text = IntangibleActive and "伪无敌: 开" or "伪无敌: 关"
+            btn.Text = IntangibleActive and "穿墙: 开" or "穿墙: 关"
             btn.TextColor3 = IntangibleActive and Color3.fromRGB(255, 255, 255) or Color3.fromRGB(180, 180, 180)
             btn.BackgroundColor3 = IntangibleActive and Color3.fromRGB(180, 0, 255) or Color3.fromRGB(40, 40, 50)
         end)
